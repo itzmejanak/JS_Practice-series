@@ -1,10 +1,16 @@
+//story start of scope with:-
+/**
+ * let
+ * var
+ * const
+ */
+
 //var c = 300
 let a = 300
 if (true) {
     let a = 10
     const b = 20
     // console.log("INNER: ", a);
-    
 }
 
 
@@ -15,7 +21,7 @@ if (true) {
 
 
 function one(){
-    const username = "hitesh"
+    const username = "janak"
 
     function two(){
         const website = "youtube"
@@ -30,8 +36,8 @@ function one(){
 // one()
 
 if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
+    const username = "janak"
+    if (username === "janak") {
         const website = " youtube"
         // console.log(username + website);
     }
@@ -44,15 +50,14 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
-
 function addone(num){
     return num + 1
 }
-
-
+console.log(addone(5))
 
 addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
+
+//note examine here how and where to call the function
