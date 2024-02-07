@@ -11,6 +11,11 @@ const temperature = 41
 // console.log("Execute");
 // <, >, <=, >=, ==, !=, ===, !==
 
+//where,
+// = is used fo assiging
+// == for checking condition
+// === for checking datatypes and condition at same
+
 // const score = 200
 
 // if (score > 100) {
@@ -18,12 +23,12 @@ const temperature = 41
 //     console.log(`User power: ${power}`);
 // }
 
-// console.log(`User power: ${power}`);
+// console.log(`User power: ${power}`);           //out of scope doesn't excuted
 
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2");       //it is not good practices
 
 // if (balance < 500) {
 //     console.log("less than 500");
@@ -47,6 +52,6 @@ if (userLoggedIn && debitCard && 2==3) {
     console.log("Allow to buy course");
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
+if (loggedInFromGoogle || loggedInFromEmail) {        //best or statement example
     console.log("User logged in");
 }
