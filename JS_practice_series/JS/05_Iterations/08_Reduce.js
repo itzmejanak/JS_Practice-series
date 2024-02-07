@@ -1,5 +1,5 @@
 /**
- * reduce = accumanator and current value
+ * reduce = accumulator and current value
  * acc = workspace
  * curr = our val
  */
