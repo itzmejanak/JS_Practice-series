@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+  }
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Styling for buttons */
+.button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  display: inline-block;
+  border-radius: 50%; /* Making buttons circular */
+  margin: 10px; /* Spacing between buttons */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adding smooth transitions */
+}
+
+/* Applying common styles for buttons */
+.button:hover {
+  transform: scale(1.1); /* Increasing size on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adding shadow on hover */
+}
+
+/* Different background colors for buttons */
+#grey {
+  background: linear-gradient(135deg, #e0e0e0, #8e8e8e);
+}
+
+#white {
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+}
+
+#blue {
+  background: linear-gradient(135deg, #00aaff, #0055ff);
+}
+
+#yellow {
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+}
