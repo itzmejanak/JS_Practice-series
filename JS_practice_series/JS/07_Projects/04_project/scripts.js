@@ -1,4 +1,3 @@
-
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
 const submit = document.querySelector('#subt');
@@ -7,6 +6,7 @@ const guessSlot = document.querySelector('.guesses');
 const remaining = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 const startOver = document.querySelector('.resultParas');
+let h = document.querySelector("#ChnageMe");
 
 const p = document.createElement('p');
 
@@ -26,11 +26,21 @@ if (playGame) {
 
 function validateGuess(guess) {
   if (isNaN(guess)) {
-    alert('PLease enter a valid number');
+    if(endGame = true){
+      h.innerHTML = "Refresh the page";
+      // alert("Refresh the page")
+    }else{
+      h.innerHTML = "Out of scope";
+      // alert('Out of scope');
+    }
+    h.innerHTML = "PLease enter a valid number";
+    // alert('PLease enter a valid number'); 
   } else if (guess < 1) {
-    alert('PLease enter a number more than 1');
+    h.innerHTML = "PLease enter a number more than 1";
+    // alert('PLease enter a number more than 1');
   } else if (guess > 100) {
-    alert('PLease enter a  number less than 100');
+    h.innerHTML = "PLease enter a  number less than 100";
+    // alert('PLease enter a  number less than 100');
   } else {
     prevGuess.push(guess);
     if (numGuess === 11) {
@@ -57,9 +67,9 @@ function checkGuess(guess) {
 
 function displayGuess(guess) {
   userInput.value = '';
-  guessSlot.innerHTML += `${guess}, `;
+  guessSlot.innerHTML += `${guess} | `;
   numGuess++;
-  remaining.innerHTML = `${11 - numGuess} `;
+  remaining.innerHTML = `${12 - numGuess} `;
 }
 
 function displayMessage(message) {
@@ -70,7 +80,16 @@ function endGame() {
   userInput.value = '';
   userInput.setAttribute('disabled', '');
   p.classList.add('button');
-  p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
+  p.innerHTML = `
+  <h2 id="newGame" style="
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(9, 39, 18), #0cb647);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">Start new Game</h2>
+`;
   startOver.appendChild(p);
   playGame = false;
   newGame();
@@ -90,4 +109,3 @@ function newGame() {
     playGame = true;
   });
 }
-
