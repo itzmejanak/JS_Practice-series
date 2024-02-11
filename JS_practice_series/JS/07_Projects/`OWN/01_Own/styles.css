@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Using Roboto for body text */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* height: 100%; */
+    width: 100%;
+    background-color: #D29FFA;
+    /* background-color: #70c6f1;  */
+    /* background-image: linear-gradient(0deg, #70c6f1 0%, #d29ffa 100%); */
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font family */
+}
+
+#full {
+    height: 100vh;
+    background: linear-gradient(45deg, #ccffcc, #99ccff, #cc99ff, #ffcccc);
+    display: flex;
+    animation: gradientAnimation 50s ease infinite;
+    justify-content: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#main {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#top h1 {
+    font-size: 3.5em;
+    font-family: 'Style Script', cursive; /* Only applying Style Script to headers */
+    color: #333; /* Improved contrast */
+}
+
+#top h2 {
+    font-size: 1.2em; /* Increased size for better readability */
+    color: #555; /* Soften the color for contrast */
+}
+
+#down {
+    height: 55%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ffffffc7; /* Changed to a lighter background for better readability */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added subtle shadow for depth */
+}
+
+/* ... No changes to the #down #up section ... */
+#down #up {
+    padding: 20px;
+}
+
+#down #up h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#down #up h3 {
+    font-size: 0.84em;
+    text-align: right;
+    color: rgb(255, 5, 5);
+}
+
+#down #up textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc; /* Added border for better visibility */
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); /* subtle inset shadow for depth */
+}
+
+#down #below {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f8f8f8; /* Lighter background for the form section */
+}
+
+#down #below #left input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+/* ... Styles for input fields, labels, and buttons ... */
+
+#down #below #left button, #down #below #right button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5c6bc0; /* More vibrant button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for button interaction */
+}
+
+#down #below #left button:hover, #down #below #right button:hover {
+    background-color: #3949ab; /* Slightly darker on hover for interactivity */
+}
+#down #below #left h2{
+    font-size: 20px;
+}
+
+#down #below #left label {
+    margin-top: 10px; 
+    display: block; 
+    font-size: 0.8em;
+    /* color: #fff;  */
+}
+
+/* ... Remaining unchanged styles ... */
+#down #below #right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#down #below #right button {
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: rgb(17, 181, 17);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#down #below #right .use {
+    font-size: 1em;
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(27, 119, 199, 0.804);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#coffee {
+    background-color: transparent; 
+    padding: 20px;
+    /* padding-bottom: 10vh; */
+    display: flex;
+    font-size: 2em; 
+    justify-content: center;
+    align-items: center;
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* Again, for better contrast */
+}
+
+#final{
+    background-color: #333;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px 60px;
+    color: #f8f8f8;
+    display: none;
+    margin-bottom: 130px;
+}
+
+/* Your existing CSS code */
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    #main {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    #top h1 {
+        font-size: 2.5em; /* Adjust header size for smaller screens */
+    }
+
+    #top h2 {
+        font-size: 1em; /* Adjust size of secondary headers for small screens */
+    }
+
+    #down {
+        height: 70%; /* Adjust the height of the main section for smaller screens */
+        width: 90%; /* Adjust the width of the main section for smaller screens */
+    }
+
+    #down #up h2 {
+        font-size: 1em; /* Adjust size of text area header for smaller screens */
+    }
+
+    #down #up textarea {
+        padding: 8px; /* Adjust padding for text area on smaller screens */
+    }
+
+    #down #up h3 {
+        font-size: 0.8em; /* Adjust size of max words text for smaller screens */
+    }
+
+    #down #below {
+        padding: 10px; /* Adjust padding for the form section on smaller screens */
+    }
+
+    #down #below #left input {
+        padding: 6px; /* Adjust padding for input field on smaller screens */
+        width: 60px; /* Adjust width for input field on smaller screens */
+    }
+
+    #down #below #left h2 {
+        font-size: 18px; /* Adjust size of "How many times?" header for smaller screens */
+    }
+
+    #down #below #left label {
+        font-size: 0.7em; /* Adjust size of label text for checkbox on smaller screens */
+    }
+
+    #down #below #right button {
+        padding: 8px 15px; /* Adjust padding for button on smaller screens */
+        font-size: 0.9em; /* Adjust font size for button on smaller screens */
+    }
+
+    #down #below #right .use {
+        font-size: 0.9em; /* Adjust font size for "How to use this App" link on smaller screens */
+    }
+
+    #coffee h3 {
+        font-size: 1em; /* Adjust font size for "Buy me a coffee" header on smaller screens */
+    }
+
+    #final {
+        padding: 15px; /* Adjust padding for the final section on smaller screens */
+    }
+}
+
+/* Add more media queries as needed to adjust styles for other screen sizes */

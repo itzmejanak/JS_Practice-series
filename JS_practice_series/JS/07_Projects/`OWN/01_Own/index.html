@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reapt Text Generator |t/rex.dev</title>
+</head>
+<body>
+    <div id="full">
+    <div id="main">
+        <div id="top">
+            <h1>Repeat Text Generator</h1>
+            <h2>Repeat, copy & paste or print any typed word, sentence or phrase up to 1000 times.</h2>
+        </div>
+        <div id="down">
+            <div id="up">
+                <h2>Type Word(s), Sentence or Paragraph below</h2>
+                <textarea rows="4" class="form-control" id="textarea" name="line" placeholder="Example: I MISS YOU"></textarea>
+                <h3>100 Words MAX</h3>
+            </div>
+            <div id="below">
+                <div id="left">
+                    <h2>How many times?</h2>
+                    <input type="number" class="form-control" name="number" id="numberInput" placeholder="123" style="width:75px;">
+                    <label>
+                        <input type="checkbox" value="yes" name="yes" id="numberCheckbox">
+                        <strong>Number Each Line?</strong>
+                      </label>
+                      <br>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="myFunction()">Reset</button>
+                </div>
+                <div id="right">
+                    <button type="submit" id="btn-success" name="submit">Generate My Lines</button><br>
+                    <a class="use" href="bart.jpg">How to use this App</a>
+                </div>
+            </div>
+        </div>
+        <div id="coffee">
+            <h3>Buy me a coffee</h3>
+        </div>
+        <div id="final">
+            <div id="result">Here is your result</div>
+            <ol>
+                
+            </ol>
+        </div>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

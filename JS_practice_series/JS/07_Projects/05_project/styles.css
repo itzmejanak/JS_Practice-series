@@ -1,0 +1,79 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up basic layout */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Styling the main container */
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally and vertically */
+    flex-direction: column;
+}
+
+/* Styling the content container */
+#container {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 14px solid white;
+    border-radius: 20px;
+    position: relative;
+    background-color: #f0f0f0; /* Added background color for better contrast */
+}
+
+#container label{
+   position: absolute;
+   align-self: flex-end;
+   margin-bottom: 20px;
+}
+/* Styling the button */
+button {
+    margin: 10px;
+    padding: 12px 24px; /* Increased padding for better clickability */
+    background-color: #4CAF50; /* Updated background color to a green shade */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer;
+}
+
+/* Styling the button hover effect */
+button:hover {
+    margin-left: 20px;
+    margin-right: 20px;
+    scale: 1.2;
+    background-color: #45a049; /* Darker shade of green */
+    transform: scale(1.05); /* Slightly scale up on hover for a subtle effect */
+}
+
+/* Styling the heading */
+h1 {
+    font-size: 32px; /* Increased font size for better visibility */
+    margin-bottom: 6px; /* Added margin bottom for spacing */
+    color: #333; /* Darkened text color for better readability */
+}
+
+input[type="setSpeed"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+    margin-left: 10px;
+}
+
